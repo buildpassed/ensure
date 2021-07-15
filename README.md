@@ -45,6 +45,7 @@ extension String {
 * [Composition](#composition)
 * [Comparison](#comparison)
 * [Collections](#collections)
+* [Types](#types)
 
 ### Composition
 #### `And`
@@ -118,4 +119,13 @@ Array<String>.Mapped<Array<Int>.Count, Array<Int>.Contains<Int._5>>
 ```swift
 // [Int].reduce(0, +) > 5
 Array<Int>.Reduced<Int._0, Operator.Add, GreaterThan<Int._5>>
+```
+
+### Types
+#### `Is`
+```swift
+// value is String
+Is<String>
+// value is MyProtocol.Type
+Is<MyProtocol.Type>
 ```
